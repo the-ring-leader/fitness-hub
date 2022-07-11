@@ -60,7 +60,7 @@ const SearchExercises = ({setExercises , part , setPart}) => {
        </div>
        <div className="field m-3">
         <p className="control">
-        <button className="button is-success" onClick={handleSearch}>Login</button>
+        <button className="button is-success" onClick={handleSearch}>Search</button>
         </p>
       </div>
 

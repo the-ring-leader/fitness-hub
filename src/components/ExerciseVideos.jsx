@@ -12,10 +12,10 @@ const ExerciseVideos = ({exerciseVideos , name}) => {
  
   return (
     <div className='tile is-child'>
-      <div className='m-3 title is-4 is-primary tag'> Watch &nbsp; <span style={{"color":"orange"}} className="has-text-weight-bold is-capitalized is-family-secondary">{name}</span> &nbsp;exercise video</div>
+      <div className='m-3 title is-4 is-primary tag' style= {{width: "97.5%",borderRadius: "5px" }}> Watch &nbsp; <span style={{"color":"orange"}} className="has-text-weight-bold is-capitalized is-family-secondary">{name}</span> &nbsp;exercise video</div>
 
       <div className="tile is-parent mr-3" style={{"overflow":"auto" , "display":"flex"}}>
-        {exerciseVideos?.slice(0 , 4).map(
+        {exerciseVideos?.slice(0 , 3).map(
           (item ,index) => (
             <div className="column p-2" key={index} style={{"height":"auto" , "width" : "auto"}}>
             <a

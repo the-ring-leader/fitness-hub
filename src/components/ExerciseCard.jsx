@@ -1,11 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Stack, Typography } from '@mui/material';
-
+import { useState } from 'react';
 
 const ExerciseCard = ({ex , index}) => {
+
+  const [style,setStyle] = useState(null);
+
+  const handleMouse = () => {
+    const mystyle = {
+      borderTop: "4px solid grey",
+      borderRadius: "5px" 
+    }
+    setStyle(mystyle);
+
+  }
+
+  const handleLeaveMouse = () => {
+    setStyle(null);
+  }
+
+
   return (
-    <Link to={`/exercise/${ex.id}`}>
+    <Link to={`/exercise/${ex.id}`} onMouseOver={handleMouse} style={style} onMouseLeave={handleLeaveMouse}>
        <img src={ex.gifUrl} alt={ex.name} loading="lazy" />
     <Stack direction="row">
       <Button sx={{ ml: '21px', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>

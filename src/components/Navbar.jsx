@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
   {/* Hello world */}
-  <nav className="navbar" role="navigation" aria-label="main navigation" style={{"backgroundColor" : "#F9F9FA"}}>
+  <nav className="navbar" role="navigation" aria-label="main navigation" style={{backgroundColor : "black" , color: "white"}}>
     <div className="navbar-brand">
       <Link className="navbar-item" to="/">
         <img
@@ -16,8 +16,8 @@ const Navbar = () => {
     </div>
     <div className="navbar-menu">
       <div className="navbar-start">
-        <Link className="navbar-item" to="/">Home</Link>
-        <a className="navbar-item" href='#exercises'>Exercises</a>
+        <Link className="navbar-item has-text-weight-bold" style={{ color: "grey"}} to="/">Home</Link>
+        <a className="navbar-item has-text-weight-bold" style={{ color: "grey"}} href='#exercises'>Exercises</a>
       </div>
     </div>
   </nav>

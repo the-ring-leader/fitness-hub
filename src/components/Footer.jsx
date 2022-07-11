@@ -1,18 +1,14 @@
 import React from 'react'
+import flogo from '../assets/images/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{backgroundColor: "black",marginTop: "10px"}}>
   <div className="content has-text-centered">
-    <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-      The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-      website content is licensed{" "}
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-        CC BY NC SA 4.0
-      </a>
-      .
+    
+    <img src={flogo}/>
+    <p style={{color: "white" , marginBottom: "0px"}}>
+    Copyright © 2022 FitnessHub, India.
     </p>
   </div>
 </footer>
